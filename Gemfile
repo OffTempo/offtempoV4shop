@@ -12,6 +12,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
+#keep sprockets-rails from upgrading so that it doesn't break spree
+gem 'sprockets-rails', '~> 2.1.3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -28,6 +31,7 @@ gem 'spring',        group: :development
 gem 'spree', '2.3.2'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-3-stable'
+gem 'deface', '~> 1.0.0'
 
 group :development, :test do
   gem 'sqlite3'
